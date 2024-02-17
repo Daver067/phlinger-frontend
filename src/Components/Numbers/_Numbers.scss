@@ -1,0 +1,26 @@
+@import "../../SassVars";
+
+#Numbers {
+  .tableDiv {
+    display: flex;
+    justify-content: center;
+    #demTable {
+      border: 1px solid #b3adad;
+      border-collapse: collapse;
+      padding: 9px;
+    }
+    #demTable th {
+      border: 1px solid #b3adad;
+      padding: 9px;
+      background: #f0f0f0;
+      color: #313030;
+    }
+    #demTable td {
+      border: 1px solid #b3adad;
+      text-align: center;
+      padding: 9px;
+      background: #ffffff;
+      color: #313030;
+    }
+  }
+}
