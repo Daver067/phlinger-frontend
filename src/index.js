@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import ErrorPage from "./Components/Error-Page";
 import Home from "./Components/Home/Home";
 import RegisterPage from "./Components/RegisterPage/RegisterPage";
@@ -16,7 +16,7 @@ import Numbers from "./Components/Numbers/Numbers";
 import Assets from "./Components/Assets/Assets";
 import CallLogs from "./Components/CallLogs/CallLogs";
 import Clients from "./Components/Clients/Clients";
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
