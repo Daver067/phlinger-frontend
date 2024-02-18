@@ -27,7 +27,6 @@ function Numbers() {
       })
       .then((data) => {
         setNumbers(data.numbers);
-        console.log(data);
       });
   }, []);
 
@@ -52,7 +51,6 @@ function Numbers() {
           console.log(data.error);
           throw new Error(`error - ${data.error}`);
         } else {
-          console.log("number added");
           return Promise.resolve();
         }
       })

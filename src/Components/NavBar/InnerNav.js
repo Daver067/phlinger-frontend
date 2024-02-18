@@ -12,8 +12,8 @@ function InnerNav() {
         <Link to="/TwilioCreds">TwilioCreds </Link>
         <Link to="/Numbers">Numbers </Link>
         <Link to="/Assets">Assets </Link>
-        <Link to="/CallLogs">CallLogs </Link>
         <Link to="/Clients">Clients </Link>
+        <Link to="/CallLogs">CallLogs </Link>
         <Link to="/Clients">Clients </Link>
         <Logout />
       </div>
