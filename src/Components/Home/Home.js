@@ -45,7 +45,6 @@ function Home() {
   }, []);
   return (
     <div>
-      <h1>will check if user is logged in or not</h1>
       {user != null ? (
         <div>
           <h2>Logged in</h2>
@@ -60,7 +59,7 @@ function Home() {
         </div>
       ) : (
         <div>
-          <p>You are not logged in</p>
+          <h2>You are not logged in</h2>
           <div>
             <Link to="/login">
               <button>Log In</button>

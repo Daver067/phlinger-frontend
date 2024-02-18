@@ -10,7 +10,6 @@ import RegisterPage from "./Components/RegisterPage/RegisterPage";
 import LoginPage from "./Components/LoginLogout/LoginPage";
 import { AuthProvider } from "./Components/auth/useAuth";
 import ConsolePage from "./Components/Console/Console";
-import Call from "./Components/Call/Call";
 import TwilioCreds from "./Components/TwilioCreds/TwilioCreds";
 import Numbers from "./Components/Numbers/Numbers";
 import Assets from "./Components/Assets/Assets";

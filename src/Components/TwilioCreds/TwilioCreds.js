@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import InnerNav from "../NavBar/InnerNav";
 import { getSessionCookie } from "../auth/sessions";
 import domainName from "../../domain";
@@ -61,56 +61,59 @@ function TwilioCreds() {
   };
 
   return (
-    <div id="TwilioCreds">
-      <h1>Update Your Twilio Credentials</h1>
-
-      <div className="tableDiv">
-        <table id="demTable">
-          <thead>
-            <tr>
-              <th>Current Twilio SID</th>
-              <th>Current Twilio Auth Token</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>{currentSID}</td>
-              <td>*******************</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
+    <div className="grid">
       <InnerNav />
-      <form>
-        <div>
-          <label>Twilio Account SID: </label>
-          <input
-            type="text"
-            value={AccountSID}
-            onChange={(e) => setAccountSID(e.target.value)}
-          />
+      <div id="TwilioCreds">
+        <h1>Update Your Twilio Credentials</h1>
+        <div className="tableDiv">
+          <table id="demTable">
+            <thead>
+              <tr>
+                <th>Current Twilio SID</th>
+                <th>Current Twilio Auth Token</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{currentSID}</td>
+                <td>*******************</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <div>
-          <label>AuthToken: </label>
-          <input
-            type="password"
-            value={AuthToken}
-            onChange={(e) => setAuthToken(e.target.value)}
-          />
+          <h3>Change your Credentials:</h3>
+          <form>
+            <div>
+              <label>Twilio Account SID: </label>
+              <input
+                type="text"
+                value={AccountSID}
+                onChange={(e) => setAccountSID(e.target.value)}
+              />
+            </div>
+            <div>
+              <label>AuthToken: </label>
+              <input
+                type="password"
+                value={AuthToken}
+                onChange={(e) => setAuthToken(e.target.value)}
+              />
+            </div>
+            <button
+              type="button"
+              onClick={() => {
+                updateCreds(AccountSID, AuthToken)
+                  .then(() => navigate("/Console"))
+                  .catch((err) => setErrormsg(err.message));
+              }}
+            >
+              Submit
+            </button>
+          </form>
         </div>
-        <button
-          type="button"
-          onClick={() => {
-            updateCreds(AccountSID, AuthToken)
-              .then(() => navigate("/Console"))
-              .catch((err) => setErrormsg(err.message));
-          }}
-        >
-          Submit
-        </button>
-      </form>
-      <p>{errormsg}</p>
+        <p>{errormsg}</p>
+      </div>
     </div>
   );
 }

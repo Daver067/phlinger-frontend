@@ -46,9 +46,6 @@ function LoginPage() {
         </button>
       </form>
       <p>{errormsg}</p>
-      <Link to="/Console">
-        <button>Console</button>
-      </Link>{" "}
     </div>
   );
 }

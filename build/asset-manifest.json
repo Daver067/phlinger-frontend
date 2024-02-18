@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/phlinger-frontend/static/css/main.a1df9c8b.css",
-    "main.js": "/phlinger-frontend/static/js/main.8a82bca7.js",
+    "main.js": "/phlinger-frontend/static/js/main.e01f7fc1.js",
     "static/js/787.9e9f4ffd.chunk.js": "/phlinger-frontend/static/js/787.9e9f4ffd.chunk.js",
     "index.html": "/phlinger-frontend/index.html",
     "main.a1df9c8b.css.map": "/phlinger-frontend/static/css/main.a1df9c8b.css.map",
-    "main.8a82bca7.js.map": "/phlinger-frontend/static/js/main.8a82bca7.js.map",
+    "main.e01f7fc1.js.map": "/phlinger-frontend/static/js/main.e01f7fc1.js.map",
     "787.9e9f4ffd.chunk.js.map": "/phlinger-frontend/static/js/787.9e9f4ffd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a1df9c8b.css",
-    "static/js/main.8a82bca7.js"
+    "static/js/main.e01f7fc1.js"
   ]
 }

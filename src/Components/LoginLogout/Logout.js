@@ -7,14 +7,14 @@ function Logout() {
   const { logout } = useAuth();
   const navigate = useNavigate();
   return (
-    <button
+    <a
       onClick={() => {
         logout();
         navigate("/");
       }}
     >
       Logout
-    </button>
+    </a>
   );
 }
 
